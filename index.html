@@ -1,112 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Welcome to Monipont</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viral Fun Zone</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #28a745, #007bff);
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
       text-align: center;
-      overflow: hidden;
     }
-
-    .container {
-      animation: fadeInUp 1.5s ease forwards;
-      max-width: 500px;
-      padding: 40px 20px;
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 20px;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
-      backdrop-filter: blur(10px);
+    header {
+      padding: 30px 20px;
+      background: rgba(0, 0, 0, 0.6);
     }
-
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
     }
-
-    p {
-      font-size: 16px;
-      margin: 10px 0 30px;
-      line-height: 1.5;
+    header p {
+      margin: 5px 0 20px;
+      font-size: 1.1rem;
     }
-
-    button {
-      padding: 14px 30px;
-      font-size: 16px;
-      background: #ffc107;
-      color: #111;
-      border: none;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: transform 0.3s;
+    .btn {
+      display: inline-block;
+      padding: 15px 25px;
+      background: #ff9800;
+      color: #fff;
+      font-size: 1.2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s ease-in-out;
     }
-
-    button:hover {
-      transform: scale(1.05);
+    .btn:hover {
+      background: #e68900;
+      transform: scale(1.1);
     }
-
-    @keyframes fadeInUp {
-      0% {
-        opacity: 0;
-        transform: translateY(60px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    section {
+      padding: 50px 20px;
     }
-
-    .circle {
-      position: absolute;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.05);
-      animation: float 6s infinite ease-in-out;
+    section img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 20px;
     }
-
-    .circle:nth-child(1) {
-      width: 100px; height: 100px;
-      top: 10%; left: 15%;
+    footer {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      font-size: 0.9rem;
     }
-
-    .circle:nth-child(2) {
-      width: 150px; height: 150px;
-      bottom: 20%; right: 10%;
-      animation-delay: 2s;
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-20px); }
-    }
-
   </style>
 </head>
 <body>
-  <div class="circle"></div>
-  <div class="circle"></div>
+  <header>
+    <h1>🔥 Viral Fun Zone 🔥</h1>
+    <p>Discover memes, funny videos, and crazy stuff that will make your day 😂</p>
+    <a href="YOUR_MONETAG_LINK_HERE" class="btn">👉 Click Here to Watch More 👈</a>
+  </header>
 
-  <div class="container">
-    <h1>Welcome to Monipont</h1>
-    <p>We’re giving away <strong>₦50,000</strong> to every Monipont user! All you need to do is share your special link with friends.</p>
-    <p>The more you share, the faster you win!</p>
-    <button onclick="nextPage()">Get Started</button>
-  </div>
+  <section>
+    <h2>Today’s Viral Pick 🎬</h2>
+    <p>Watch this before it gets taken down! 👇</p>
+    <img src="https://i.imgur.com/3ZQ3Z4A.jpeg" alt="Viral Meme">
+    <br><br>
+    <a href="YOUR_MONETAG_LINK_HERE" class="btn">Watch Full Video</a>
+  </section>
 
-  <script>
-    function nextPage() {
-      // Replace with your actual next page
-      window.location.href = "share.html";
-    }
-  </script>
+  <footer>
+    <p>© 2025 Viral Fun Zone | All rights reserved.</p>
+  </footer>
 </body>
 </html>
