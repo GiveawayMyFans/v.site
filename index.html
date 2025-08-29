@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to Monipont</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #28a745, #007bff);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .container {
+      animation: fadeInUp 1.5s ease forwards;
+      max-width: 500px;
+      padding: 40px 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      margin: 10px 0 30px;
+      line-height: 1.5;
+    }
+
+    button {
+      padding: 14px 30px;
+      font-size: 16px;
+      background: #ffc107;
+      color: #111;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(60px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.05);
+      animation: float 6s infinite ease-in-out;
+    }
+
+    .circle:nth-child(1) {
+      width: 100px; height: 100px;
+      top: 10%; left: 15%;
+    }
+
+    .circle:nth-child(2) {
+      width: 150px; height: 150px;
+      bottom: 20%; right: 10%;
+      animation-delay: 2s;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="circle"></div>
+  <div class="circle"></div>
+
+  <div class="container">
+    <h1>Welcome to Monipont</h1>
+    <p>We’re giving away <strong>₦50,000</strong> to every Monipont user! All you need to do is share your special link with friends.</p>
+    <p>The more you share, the faster you win!</p>
+    <button onclick="nextPage()">Get Started</button>
+  </div>
+
+  <script>
+    function nextPage() {
+      // Replace with your actual next page
+      window.location.href = "share.html";
+    }
+  </script>
+</body>
+</html>
